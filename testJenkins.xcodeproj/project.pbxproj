@@ -13,7 +13,18 @@
 		639AF4F627B78B77002E78EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639AF4F427B78B77002E78EB /* Main.storyboard */; };
 		639AF4F827B78B7B002E78EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639AF4F727B78B7B002E78EB /* Assets.xcassets */; };
 		639AF4FB27B78B7B002E78EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639AF4F927B78B7B002E78EB /* LaunchScreen.storyboard */; };
+		63AE4FDD27B8CCF000FEA78E /* testJenkinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE4FDC27B8CCF000FEA78E /* testJenkinsTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63AE4FDF27B8CCF000FEA78E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 639AF4E327B78B77002E78EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 639AF4EA27B78B77002E78EB;
+			remoteInfo = testJenkins;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		639AF4EB27B78B77002E78EB /* testJenkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testJenkins.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		639AF4F727B78B7B002E78EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639AF4FA27B78B7B002E78EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		639AF4FC27B78B7B002E78EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63AE4FDA27B8CCF000FEA78E /* testJenkinsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testJenkinsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63AE4FDC27B8CCF000FEA78E /* testJenkinsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testJenkinsTests.swift; sourceTree = "<group>"; };
+		63AE4FDE27B8CCF000FEA78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		639AF4E827B78B77002E78EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63AE4FD727B8CCF000FEA78E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				639AF4ED27B78B77002E78EB /* testJenkins */,
+				63AE4FDB27B8CCF000FEA78E /* testJenkinsTests */,
 				639AF4EC27B78B77002E78EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				639AF4EB27B78B77002E78EB /* testJenkins.app */,
+				63AE4FDA27B8CCF000FEA78E /* testJenkinsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				639AF4FC27B78B7B002E78EB /* Info.plist */,
 			);
 			path = testJenkins;
+			sourceTree = "<group>";
+		};
+		63AE4FDB27B8CCF000FEA78E /* testJenkinsTests */ = {
+			isa = PBXGroup;
+			children = (
+				63AE4FDC27B8CCF000FEA78E /* testJenkinsTests.swift */,
+				63AE4FDE27B8CCF000FEA78E /* Info.plist */,
+			);
+			path = testJenkinsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 639AF4EB27B78B77002E78EB /* testJenkins.app */;
 			productType = "com.apple.product-type.application";
 		};
+		63AE4FD927B8CCF000FEA78E /* testJenkinsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63AE4FE327B8CCF000FEA78E /* Build configuration list for PBXNativeTarget "testJenkinsTests" */;
+			buildPhases = (
+				63AE4FD627B8CCF000FEA78E /* Sources */,
+				63AE4FD727B8CCF000FEA78E /* Frameworks */,
+				63AE4FD827B8CCF000FEA78E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63AE4FE027B8CCF000FEA78E /* PBXTargetDependency */,
+			);
+			name = testJenkinsTests;
+			productName = testJenkinsTests;
+			productReference = 63AE4FDA27B8CCF000FEA78E /* testJenkinsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +148,10 @@
 				TargetAttributes = {
 					639AF4EA27B78B77002E78EB = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					63AE4FD927B8CCF000FEA78E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 639AF4EA27B78B77002E78EB;
 					};
 				};
 			};
@@ -115,6 +169,7 @@
 			projectRoot = "";
 			targets = (
 				639AF4EA27B78B77002E78EB /* testJenkins */,
+				63AE4FD927B8CCF000FEA78E /* testJenkinsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +182,13 @@
 				639AF4FB27B78B7B002E78EB /* LaunchScreen.storyboard in Resources */,
 				639AF4F827B78B7B002E78EB /* Assets.xcassets in Resources */,
 				639AF4F627B78B77002E78EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63AE4FD827B8CCF000FEA78E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63AE4FD627B8CCF000FEA78E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63AE4FDD27B8CCF000FEA78E /* testJenkinsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63AE4FE027B8CCF000FEA78E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 639AF4EA27B78B77002E78EB /* testJenkins */;
+			targetProxy = 63AE4FDF27B8CCF000FEA78E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		639AF4F427B78B77002E78EB /* Main.storyboard */ = {
@@ -319,6 +397,46 @@
 			};
 			name = Release;
 		};
+		63AE4FE127B8CCF000FEA78E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8TDW5YY5Q;
+				INFOPLIST_FILE = testJenkinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.medcierge.testJenkinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testJenkins.app/testJenkins";
+			};
+			name = Debug;
+		};
+		63AE4FE227B8CCF000FEA78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8TDW5YY5Q;
+				INFOPLIST_FILE = testJenkinsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.medcierge.testJenkinsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testJenkins.app/testJenkins";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +454,15 @@
 			buildConfigurations = (
 				639AF50027B78B7B002E78EB /* Debug */,
 				639AF50127B78B7B002E78EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63AE4FE327B8CCF000FEA78E /* Build configuration list for PBXNativeTarget "testJenkinsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63AE4FE127B8CCF000FEA78E /* Debug */,
+				63AE4FE227B8CCF000FEA78E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
